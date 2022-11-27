@@ -1,0 +1,260 @@
+*{
+    font-family: "Raleway";
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    border: 0;
+}
+
+input{
+    outline: none !important;
+    outline-offset: 0;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #131313;
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background: #B8860B;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__text{
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 34px;
+    color: #131313;
+}
+
+.header__settings__block{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.header__settings{
+    width: 64px;
+    height: 64px;
+    background: url(../img/1904675-configuration-edit-gear-options-preferences-setting-settings_122525.svg);
+    cursor: pointer;
+    
+}
+
+.pass{
+    width: 64px;
+    height: 64px;
+}
+
+.first{
+    padding-bottom: 200px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first__title{
+    padding-top: 54px;
+    font-size: 40px;
+}
+
+.first__cards{
+    margin-top: 154px;
+    display: flex;
+    flex-direction: row;
+}
+
+.first__image1{
+    background: url('../img/Alexandre_Cabanel.jpg') no-repeat center center / cover;
+}
+
+.first__image2{
+    margin-left: 112px;
+    background: url('../img/Bayeu_por_Goya.jpg') no-repeat center center / cover;
+}
+
+.first__image3{
+    margin-left: 112px;
+    background: url('../img/leonardo_da_vinci.jpg') no-repeat center center / cover;
+}
+
+.first__image4{
+    margin-left: 112px;
+    background: url('../img/mikelandzhelo.jpg') no-repeat center center / cover;
+}
+
+.fi{
+    width: 406px;
+    height: 605px;
+    border-radius: 15px;
+    opacity: 0.3;
+    transition: 0.7s ease-in-out;
+    border: 0.5px solid #131313;
+    box-shadow:0 0 20px #131313;
+}
+
+.first__artist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.fa{
+    margin-left: 112px;
+}
+
+.fi:hover{
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+    border: 0.5px solid 	
+    #DAA520;
+    box-shadow:0 0 30px #B8860B;
+    cursor: pointer;
+    transform:scale(1.05);
+}
+.search__field{
+    width: 1000px;
+}
+.search__button{
+    width: 200px;
+}
+
+.second{
+    padding-bottom: 100px;
+}
+
+.search{
+    padding: 40px;
+}
+
+.search__field{
+    width: 900px;
+    height: 47px;
+    margin-left: 5px;
+    background: #252525;
+    border-radius: 20px 0 0 20px;
+    color: #fff;
+    padding: 5px 30px;
+    font-size: 20px;
+    border-left: 1px solid #181818;
+    border-width: 0 2px 0 0; /* top right bottom left */
+}
+
+.search__button{
+    width: 200px;
+    height: 57px;
+    margin-left: -5px;
+    background: #252525;
+    border-radius: 0 20px 20px 0;
+    color: #fff;
+    font-size: 20px;
+    border-left: 1px solid #181818;
+    border-width: 0 0 0 2px; /* top right bottom left */
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.7s ease-in-out;
+}
+.search__button:hover{
+    opacity: 1.5;
+    transition: 0.7s ease-in-out;
+}
+
+.second__textblock{
+    background: url('../img/Fallen\ Angel.jpg')no-repeat center center/cover;
+    width: 80%;
+    height: 920px;
+    filter: blur(7.5px);
+    opacity: 0.2;
+    border-radius: 20px;
+}
+
+.second__img{
+    background: url('../img/Fallen\ Angel.jpg')no-repeat center center/cover;
+}
+.third__img{
+    background: url('../img/the\ _fall_of_the_giants.jpg')no-repeat center center/cover;
+}
+.fourth__img{
+    background: url('../img/last_supper.jpg')no-repeat center center/cover;
+}
+.fifth__img{
+    background: url('../img/creation_of_adam.jpg')no-repeat center center/cover;
+}
+
+.backToTop {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 75%;
+    background-color: #252525;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    top: auto;
+    left: auto;
+    left: 0;
+    bottom: 120px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.7s ease-in-out;
+    opacity: 0.6;
+    border-radius: 0 20px 20px 0;
+}
+  
+.backToTop::before {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    content: '';
+    background: #252525;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    transition: 0.7s ease-in-out;
+}
+  
+.backToTop:hover {
+    opacity: 1;
+    width: 100px;
+}
+  
+.backToTop_visible {
+    display: block;
+    transition: 0.7s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #B8860B;
+    border-radius: 5px;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+ 

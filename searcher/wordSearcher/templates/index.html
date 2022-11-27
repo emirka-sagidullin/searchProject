@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>word searcher</title>
+</head>
+<body>
+    <header class="header">
+        <div class="pass"></div>
+        <div class="header__text">
+            word searcher
+        </div>
+        <div class="header__settings__block">
+            <button id="settings" onfocus="rotate()" class="header__settings"></button>
+        </div>
+    </header>
+    <div class="first">
+        <div class="container">
+            <div class="first__title">Choose an artist</div>
+            <div class="first__cards">
+                <div class="first__card">
+                    <div onclick="scrollFunc2()" class="fi first__image1"></div>
+                    <div class=" first__artist">Aleksandre Canabel</div>
+                </div>
+                <div class="first__card">
+                    <div onclick="scrollFunc3()" class="fi first__image2"></div>
+                    <div class="fa first__artist">Francisko Bayeu</div>
+                </div>
+                <div class="first__card">
+                    <div onclick="scrollFunc4()" class="fi first__image3"></div>
+                    <div class="fa first__artist">Leonardo Da Vinci</div>
+                </div>
+                <div class="first__card">
+                    <div onclick="scrollFunc5()" class="fi first__image4"></div>
+                    <div class="fa first__artist">Michelagelo Buonarroti</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="second" class="second">
+        <div class="container">
+            <div class="search">
+                <input type="text" class="search__field" placeholder="Enter text">
+                <button class="search__button">Search</button>
+            </div>
+            <div id="text__block" class="second__textblock"></div>
+        </div>
+        <button class="backToTop"></button>
+    </div>
+    
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
